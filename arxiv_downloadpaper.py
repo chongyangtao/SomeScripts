@@ -54,7 +54,7 @@ def getDownPdf(cons, title, folder, save_path):
             if chunk:  # filter out keep-alive new chunks
                 f.write(chunk)
                 # f.flush()
-                '''
+    '''
 	r = requests.get(cons, stream=True, timeout=None)
     # r = requests.get(cons, stream=True, proxies=proxies, timeout=None)  # with proxies
     f = open(fl, 'wb')
